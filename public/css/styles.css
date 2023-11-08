@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+/*Vista mobile por defecto*/
+body{
+    font-family: 'Roboto', sans-serif;  
+}
+
+p{
+    font-size: 12px;
+}
+
+h3{
+    font-size: 24px;
+    color:#666
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 5%;  
+}
+
+header{
+    background-color:#EAC926;
+}
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+header .form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header .navbar{
+    font-size: 12px;
+    margin-left: 0px;
+    display: none;
+    display: flex;
+    align-content: space-between;
+}
+
+
+header .navbar ul li{
+    list-style-type: none;
+    margin: 5px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding:  0px;
+}
+
+nav ul{
+    display: flex;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 3px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+main section article img{
+    width: 100%;
+}
+main section article i,
+.descuento{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.producto{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+
+div.ultima-visita,
+div.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.precio{
+    font-size: 18px;
+    width: 30px;;
+}
+
+.descuento,
+.descripcion{
+    font-size: 16px;
+    font-weight: normal;
+}
+.descripcion{
+    color:#666;
+    display: none;
+    margin-top: 20px;
+}
+
+div.menu-hamburguesa{
+    text-align: center;
+}
+
+div.menu-hamburguesa i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    width: 40px;
+}
+.botton-footer{
+    background-color: whitesmoke;
+}
+.botton-footer article{
+    text-align: center;    
+}
+.botton-footer article i{
+    size: 2em;
+    margin: 10px;
+    color: #03264C;    
+}
+@media (min-width: 361px){ /* Vista Tablet*/
+    header nav{
+        display: block;
+        display: flex;
+        align-content: space-between;
+    }
+
+    .menu-hamburguesa{
+        display: none;
+    }
+    main section article .descripcion{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.productos article{
+        width: 45%;
+    }
+
+    .precio,
+    .descuento{
+        width: 50%;
+    }
+}
+@media (min-width: 769px){ /*Vista Desktop*/
+    main section div.productos article{
+        width: 22%;
+    }
+}
