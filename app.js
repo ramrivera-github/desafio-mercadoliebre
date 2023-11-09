@@ -9,4 +9,4 @@ app.get('/login', (req,res)=> res.sendFile(__dirname + '/views/login.html'))
 
 app.get('/register', (req,res)=>res.sendFile(__dirname + '/views/register.html'))
 
-app.listen(port,()=>console.log("Servidor corriendo en el puerto ${port}"))
+app.listen(port,()=>console.log(`Servidor corriendo en el puerto ${port}`))
