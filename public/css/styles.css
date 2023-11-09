@@ -47,26 +47,13 @@ header div.top-header p{
 header .navbar{
     font-size: 12px;
     margin-left: 0px;
-    display: none;
-    display: flex;
-    align-content: space-between;
+    display: none; 
 }
 
 
 header .navbar ul li{
     list-style-type: none;
     margin: 5px;
-}
-
-.navbar a{
-    text-decoration: none;
-    color: #000;
-    display: inline-block;
-    padding:  0px;
-}
-
-nav ul{
-    display: flex;
 }
 
 header .form .input{
@@ -182,12 +169,16 @@ div.menu-hamburguesa i{
     color: #03264C;    
 }
 @media (min-width: 361px){ /* Vista Tablet*/
-    header nav{
+    header .navbar{
         display: block;
         display: flex;
-        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
-
+    header .navbar ul{
+        display: flex;
+    }
     .menu-hamburguesa{
         display: none;
     }
@@ -208,16 +199,16 @@ div.menu-hamburguesa i{
     }
     
     main section div.productos article{
-        width: 45%;
+        width: 47%;
     }
 
     .precio,
     .descuento{
-        width: 50%;
+        width: 47%;
     }
 }
 @media (min-width: 769px){ /*Vista Desktop*/
     main section div.productos article{
-        width: 22%;
+        width: 24%;
     }
 }
