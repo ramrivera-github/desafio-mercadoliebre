@@ -17,26 +17,25 @@ h3{
     color:#666
 }
 
-div.top-header{
+header div.top-header{    
     display: flex;
-    flex-wrap: wrap; 
-    padding: 5%;  
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
-
+header div.top-header p {
+    display: none;
+}
 header{
     background-color:#EAC926;
 }
 
 header div.logo{
-    width: 50%;
-    padding: 10px;
+    width: 40%;    
+    padding: 5px;
 }
 header .form{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 11px;
+    display: none;
 }
 header div.top-header p{
     width: 100%;
@@ -157,8 +156,14 @@ div.menu-hamburguesa i{
     padding: 10px;
     width: 40px;
 }
-.botton-footer{
-    background-color: whitesmoke;
+.botton-footer{    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: background-color 0.3s;
+        cursor: pointer;
+        margin: 10px;
+        background-color: white;       
 }
 .botton-footer article{
     text-align: center;    
@@ -168,7 +173,30 @@ div.menu-hamburguesa i{
     margin: 10px;
     color: #03264C;    
 }
+footer .derechos{
+    text-align: center;
+}
 @media (min-width: 361px){ /* Vista Tablet*/
+    header div.logo{
+        width: 40%;    
+        padding: 10px;}
+    header div.top-header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    header .form{
+        display: block;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        font-size: 11px;
+    }
+    header div.top-header p.top-compras{
+        width: 30%;
+        display: block;        
+    }
     header .navbar{
         display: block;
         display: flex;
@@ -206,8 +234,15 @@ div.menu-hamburguesa i{
     .descuento{
         width: 47%;
     }
+    .botton-footer{    
+        flex-direction: row;
+    }
 }
 @media (min-width: 769px){ /*Vista Desktop*/
+    header div.logo, header div.form, header p.top-compras{
+        width: 30%;    
+        }
+        
     main section div.productos article{
         width: 24%;
     }
