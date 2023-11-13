@@ -31,7 +31,7 @@ header{
 }
 
 header div.logo{
-    width: 40%;    
+    width: 80%;    
     padding: 5px;
 }
 
@@ -154,8 +154,8 @@ div.menu-hamburguesa i{
     text-align: center;    
 }
 .botton-footer article i{
-    size: 2em;
-    margin: 10px;
+    font-size: 2em;
+    margin: 15px;
     color: #03264C;    
 }
 footer .derechos{
@@ -164,30 +164,36 @@ footer .derechos{
 footer {
     margin: 10px;
 }
+footer h3{
+    font-size: 18px;
+}
 /*Estilo del formulario */
 .form{
     display: none;
 }
-.form{
-    display: flex;      
-    align-items: stretch;
+.form .boton-buscar i{
+    
+    font-size: 18px;
+    background-color: #1259c3;
+    color: whitesmoke;
+    padding: 3px;
+    margin: auto;
+    border: 0px;
 }
 .form input{
     border: 0px;
     padding: 5px;
-    margin-top: 5px;    
     border-radius: 5px;
     -webkit-border-radius:;
     -moz-border-radius:;
     -ms-border-radius:;
     -o-border-radius:;
 }
-.form .search-logo{
-    width: 10%;
-    background-color: #ebebeb;
-}
-.form .search{
-    width: 80%;        
+.form .boton-buscar{
+    border: 0px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #1259c3;
 }
 
 /*Estilo del formulario */
@@ -255,8 +261,8 @@ footer {
 /* Vista Tablet*/
 @media (min-width: 361px){ 
     header div.logo{
-        width: 40%;    
-        padding: 10px;}
+        width: 35%;    
+        padding: 5px;}
     header div.top-header{
         flex-direction: row;
         flex-wrap: wrap;
