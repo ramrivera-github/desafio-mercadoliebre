@@ -3,7 +3,7 @@
     padding: 0px;    
     box-sizing: border-box;
 }
-/*Vista mobile por defecto*/
+/*Vista mobile first*/
 body{
     font-family: 'Roboto', sans-serif;  
 }
@@ -34,9 +34,7 @@ header div.logo{
     width: 40%;    
     padding: 5px;
 }
-header .form{
-    display: none;
-}
+
 header div.top-header p{
     width: 100%;
     text-align: center;
@@ -55,20 +53,7 @@ header .navbar ul li{
     margin: 5px;
 }
 
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 3px;
-}
 
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
 
 section.banner img{
     width: 100%;
@@ -176,7 +161,99 @@ div.menu-hamburguesa i{
 footer .derechos{
     text-align: center;
 }
-@media (min-width: 361px){ /* Vista Tablet*/
+footer {
+    margin: 10px;
+}
+/*Estilo del formulario */
+.form{
+    display: none;
+}
+.form{
+    display: flex;      
+    align-items: stretch;
+}
+.form input{
+    border: 0px;
+    padding: 5px;
+    margin-top: 5px;    
+    border-radius: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.form .search-logo{
+    width: 10%;
+    background-color: #ebebeb;
+}
+.form .search{
+    width: 80%;        
+}
+
+/*Estilo del formulario */
+.register {
+    background-color: #ebebeb;
+    padding: 20px 15px;
+    margin: auto;
+    max-width: 500px;
+}
+.register-item{
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.register-item .item-title{
+    font-weight: bold;
+    display: block;
+}
+.register input{
+    border: 0px;
+    padding: 15px;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.register-boton{
+    display: flex;
+    justify-content: space-around;
+}
+.register .item-boton{
+    width: 45%;
+    background-color: #1259c3;
+    color: whitesmoke;
+}
+.register .interests input, .register .profile input{
+    width: 20%;
+    padding: 15px;
+}
+/*Estilo de Login */
+.login{
+    background-color: #ebebeb;
+    padding: 20px 15px;
+    margin: auto;
+    max-width: 300px;
+}
+.login input{
+    border: 0px;
+    padding: 15px;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.login .login-boton input{
+    width: 100%;
+    background-color: #1259c3;
+    color: whitesmoke;
+}
+/* Vista Tablet*/
+@media (min-width: 361px){ 
     header div.logo{
         width: 40%;    
         padding: 10px;}

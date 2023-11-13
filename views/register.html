@@ -44,60 +44,71 @@
         <img src="static/images/img-home-banner.jpg"  alt="Banner de ofertas">
     </section>
     <main>
-        <form action="/" method="POST">
-            <input type="text" name="name" placeholder="Nombre y apellido">
-            <input type="text" name="user" placeholder="Nombre de usuario">
-            <input type="email" name="email" placeholder="E-mail">
-            <br>
-            <label for="birth_date"><b>Fecha de nacimiento</b></label>
-            <br>
-            <input type="date" name="birth_date" id="birth_date">
-            <br>
-            <input type="text" name="addres" placeholder="Domicilio">
-            <h4>Perfil del usuario</h4>
-            <div class="profile">
-                <input type="radio" name="profile" value="buy" id="buy">
-                <label for="buy">Comprador</label>
-                <input type="radio" name="profile" value="sell" id="sell">
-                <label for="sell">Vendedor</label>
+        <form action="/" method="POST" class="register">
+            <div class="register-item">
+                <input type="text" name="name" placeholder="Nombre y apellido">
             </div>
-
-            <h4>Intereses</h4>
-            <div class="interests">
-                <div>
-                    <input type="checkbox" name="interests" value="a" id="a">
-                    <label for="a">Electro</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="interests" value="b" id="b">
-                    <label for="b">Moda</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="interests" value="c" id="c">
-                    <label for="c">Hogar</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="interests" value="d" id="d">
-                    <label for="d">Juguetería</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="interests" value="e" id="e">
-                    <label for="e">Vida sana</label>
-                </div>
+            <div class="register-item">
+                <input type="text" name="user" placeholder="Nombre de usuario">
             </div>
-            
-            <h4>Elegí tu foto de usuario</h4>
-            <input type="file" name="avatar">
-            <br>
-            <br>
-            <input type="password" name="pass" placeholder="Elegí tu contraseña">
-            <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-            <br>
-            <br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
-            <br>
-            <br>
+            <div class="register-item">
+                <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="register-item">
+                <label for="birth_date" class="item-title">Fecha de nacimiento</label>            
+                <input type="date" name="birth_date" id="birth_date">    
+            </div>            
+            <div class="register-item">
+                <input type="text" name="addres" placeholder="Domicilio">    
+            </div>
+            <div class="register-item">
+                <label class="item-title">Perfil del usuario</label>
+                <div class="profile">
+                    <input type="radio" name="profile" value="buy" id="buy">
+                    <label for="buy">Comprador</label>
+                    <input type="radio" name="profile" value="sell" id="sell">
+                    <label for="sell">Vendedor</label>
+                </div>    
+            </div>
+            <div class="register-item">
+                <label class="item-title">Intereses</label>
+                <div class="interests">
+                    <div>
+                        <input type="checkbox" name="interests" value="a" id="a">
+                        <label for="a">Electro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="b" id="b">
+                        <label for="b">Moda</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="c" id="c">
+                        <label for="c">Hogar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="d" id="d">
+                        <label for="d">Juguetería</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="e" id="e">
+                        <label for="e">Vida sana</label>
+                    </div>
+                </div>    
+            </div>            
+            <div class="register-item">
+                <label class="item-title">Elegí tu foto de usuario</label>
+                <input type="file" name="avatar">    
+            </div>
+            <div class="register-item">
+                <input type="password" name="pass" placeholder="Elegí tu contraseña">
+            </div>
+            <div>
+                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+            </div>
+            <div class="register-boton">
+                <input class="item-boton" type="submit" value="Enviar">
+                <input class="item-boton" type="reset" value="Borrar">    
+            </div>
         </form>
     </main>
     <footer>
