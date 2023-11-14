@@ -23,9 +23,11 @@ header div.top-header{
     flex-direction: column;
     align-items: center;
 }
+
 header div.top-header p {
     display: none;
 }
+
 header{
     background-color:#EAC926;
 }
@@ -47,13 +49,10 @@ header .navbar{
     display: none; 
 }
 
-
 header .navbar ul li{
     list-style-type: none;
     margin: 5px;
 }
-
-
 
 section.banner img{
     width: 100%;
@@ -61,7 +60,7 @@ section.banner img{
 
 main{
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto;       
 }
 
 main section article{
@@ -71,6 +70,7 @@ main section article{
 main section article img{
     width: 100%;
 }
+
 main section article i,
 .descuento{
     color: #39b54a;
@@ -104,7 +104,6 @@ article div.producto{
     position: relative;
 }
 
-
 div.ultima-visita,
 div.ofertas{
     display: flex;
@@ -121,6 +120,7 @@ div.ofertas{
     font-size: 16px;
     font-weight: normal;
 }
+
 main .productos article .descripcion{
     color:#666;    
     margin-top: 20px;
@@ -141,36 +141,44 @@ div.menu-hamburguesa i{
     padding: 10px;
     width: 40px;
 }
+
 .botton-footer{    
         display: flex;
         flex-direction: column;
         text-align: center;
         transition: background-color 0.3s;
         cursor: pointer;
-        margin: 10px;
-        background-color: white;       
+        margin: 10px;       
+        background-color: white;      
 }
+
 .botton-footer article{
-    text-align: center;    
+    text-align: center;
+    padding: 5px;    
 }
+
 .botton-footer article i{
     font-size: 2em;
-    margin: 15px;
+    margin: 10px;
     color: #03264C;    
 }
+
 footer .derechos{
-    text-align: center;
+    text-align: center;    
 }
 footer {
-    margin: 10px;
+    margin: 10px;    
 }
 footer h3{
     font-size: 18px;
 }
+
 /*Estilo del formulario de Busqueda */
+
 .form{
     display: none;
 }
+
 .form .boton-buscar i{
     
     font-size: 18px;
@@ -180,6 +188,7 @@ footer h3{
     margin: auto;
     border: 0px;
 }
+
 .form input{
     border: 0px;
     padding: 5px;
@@ -189,31 +198,37 @@ footer h3{
     -ms-border-radius:;
     -o-border-radius:;
 }
+
 .form .boton-buscar{
     border: 0px;
     border-radius: 5px;
     padding: 2px;
     background-color: #1259c3;
 }
+
 footer i:hover{
     color: #39b54a;
 }
 
 /*Estilo del Formulario Registro */
+
 .register {
     background-color: #ebebeb;
     padding: 20px 15px;
     margin: auto;
     max-width: 500px;
 }
+
 .register-item{
     margin-bottom: 15px;
     padding-bottom: 10px;
 }
+
 .register-item .item-title{
     font-weight: bold;
     display: block;
 }
+
 .register input{
     border: 0px;
     padding: 15px;
@@ -225,22 +240,27 @@ footer i:hover{
     -ms-border-radius:;
     -o-border-radius:;
 }
+
 .register-boton{
     display: flex;
     justify-content: space-around;
 }
+
 .register .item-boton{
     width: 45%;
     background-color: #1259c3;
     color: whitesmoke;
 }
+
 .register .interests input, .register .profile input{
     width: 20%;
     padding: 15px;
 }
+
 .register .mensaje-error{
     display: none;    
 }
+
 :invalid + .mensaje-error{
     color: red;
     display: block;
@@ -248,17 +268,20 @@ footer i:hover{
     margin: 5px 0px 0px 10px;
     
 }
+
 .register .mensaje-error:valid{
     display: none;
 }
 
 /*Estilo de Login */
+
 .login{
     background-color: #ebebeb;
     padding: 20px 15px;
     margin: auto;
     max-width: 300px;
 }
+
 .login input{
     border: 0px;
     padding: 15px;
@@ -270,12 +293,15 @@ footer i:hover{
     -ms-border-radius:;
     -o-border-radius:;
 }
+
 .login .login-boton input{
     width: 100%;
     background-color: #1259c3;
     color: whitesmoke;
 }
+
 /*Animaciones y transiciones*/
+
 .productos article{
     transition: box-shadow 0.3s;
 }
@@ -291,9 +317,11 @@ footer i:hover{
 .productos article i{
     transition-duration: 1s;
 }
+
 .productos article i:hover{
     rotate: -90deg;
 }
+
 .productos article .descripcion{
     position: relative;
 }
@@ -302,9 +330,8 @@ main .login .login-boton input:hover{
     background-color: #0022AA;
 }
 
-
-
 /* Vista Tablet*/
+
 @media (min-width: 361px){ 
     header div.logo{
         width: 35%;    
@@ -314,6 +341,7 @@ main .login .login-boton input:hover{
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     header .form{
         display: block;
         width: 40%;
@@ -322,10 +350,12 @@ main .login .login-boton input:hover{
         padding: 2px;
         font-size: 11px;
     }
+
     header div.top-header p.top-compras{
         width: 30%;
         display: block;        
     }
+
     header .navbar{
         display: block;
         display: flex;
@@ -333,12 +363,15 @@ main .login .login-boton input:hover{
         align-items: center;
         width: 100%;
     }
+
     header .navbar ul{
         display: flex;
     }
+
     .menu-hamburguesa{
         display: none;
     }
+
     main section article .descripcion{
         display: block;
     }
@@ -363,14 +396,19 @@ main .login .login-boton input:hover{
     .descuento{
         width: 47%;
     }
+
     .botton-footer{    
         flex-direction: row;
     }
 }
-@media (min-width: 769px){ /*Vista Desktop*/
+
+/*Vista Desktop*/
+
+@media (min-width: 769px){ 
+
     header div.logo, header div.form, header p.top-compras{
         width: 30%;    
-        }
+    }
         
     main section div.productos article{
         width: 24%;
