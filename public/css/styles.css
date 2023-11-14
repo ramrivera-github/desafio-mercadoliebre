@@ -121,10 +121,10 @@ div.ofertas{
     font-size: 16px;
     font-weight: normal;
 }
-.descripcion{
-    color:#666;
-    display: none;
+main .productos article .descripcion{
+    color:#666;    
     margin-top: 20px;
+    display: none;
 }
 
 div.menu-hamburguesa{
@@ -167,7 +167,7 @@ footer {
 footer h3{
     font-size: 18px;
 }
-/*Estilo del formulario */
+/*Estilo del formulario de Busqueda */
 .form{
     display: none;
 }
@@ -199,7 +199,7 @@ footer i:hover{
     color: #39b54a;
 }
 
-/*Estilo del formulario */
+/*Estilo del Formulario Registro */
 .register {
     background-color: #ebebeb;
     padding: 20px 15px;
@@ -265,20 +265,30 @@ footer i:hover{
 .productos article{
     transition: box-shadow 0.3s;
 }
+
 .productos article:hover{
-    box-shadow: 0px 0px 30px #666;
+    box-shadow: 0px 0px 30px #666;    
 }
+
+.productos article:hover .descripcion{
+    display: block;    
+}
+
 .productos article i{
     transition-duration: 1s;
-
 }
 .productos article i:hover{
     rotate: -90deg;
+}
+.productos article .descripcion{
+    position: relative;
 }
 
 main .login .login-boton input:hover{
     background-color: #0022AA;
 }
+
+
 
 /* Vista Tablet*/
 @media (min-width: 361px){ 
