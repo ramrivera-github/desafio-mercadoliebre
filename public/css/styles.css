@@ -258,6 +258,25 @@ footer h3{
     background-color: #1259c3;
     color: whitesmoke;
 }
+/*Animaciones y transiciones*/
+.productos article{
+    transition: box-shadow 0.3s;
+}
+.productos article:hover{
+    box-shadow: 0px 0px 30px #666;
+}
+.productos article i{
+    transition-duration: 1s;
+
+}
+.productos article i:hover{
+    rotate: -90deg;
+}
+
+main .login .login-boton input:hover{
+    background-color: #0022AA;
+}
+
 /* Vista Tablet*/
 @media (min-width: 361px){ 
     header div.logo{
