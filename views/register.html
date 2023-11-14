@@ -46,13 +46,16 @@
     <main>
         <form action="/" method="POST" class="register">
             <div class="register-item">
-                <input type="text" name="name" placeholder="Nombre y apellido">
+                <input type="text" name="name" placeholder="Nombre y apellido" required pattern="[A-Za-z\s]+" minlength="3">                
+                <div class="mensaje-error">El campo nombre debe ser alfabetico y de 4 caracters como mínimo.</div>
             </div>
             <div class="register-item">
-                <input type="text" name="user" placeholder="Nombre de usuario">
+                <input type="text" name="user" placeholder="Nombre de usuario" required pattern="[A-Za-z0-9\s]+" minlength="6" maxlength="24">
+                <div class="mensaje-error">El nombre de usuario debe alfanumerico de 6 a 24 caracteres.</div>
             </div>
             <div class="register-item">
-                <input type="email" name="email" placeholder="E-mail">
+                <input type="email" name="email" placeholder="E-mail" required>
+                <div class="mensaje-error">La dirección de correo no es válida.</div>
             </div>
             <div class="register-item">
                 <label for="birth_date" class="item-title">Fecha de nacimiento</label>            
@@ -100,10 +103,12 @@
                 <input type="file" name="avatar">    
             </div>
             <div class="register-item">
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
+                <input type="password" name="pass" placeholder="Elegí tu contraseña" required pattern="[A-Za-z0-9\s]+" minlength="6" maxlength="16">
+                <div class="mensaje-error"> - La contraseña debe ser alfanumerica <br> - Tener entre 6 y 16 caracteres.</div>
             </div>
             <div>
-                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña" required pattern="[A-Za-z0-9\s]+" minlength="6" maxlength="16">
+                <div class="mensaje-error"> - La contraseña debe ser alfanumerica <br> - Tener entre 6 y 16 caracteres.</div>
             </div>
             <div class="register-boton">
                 <input class="item-boton" type="submit" value="Enviar">

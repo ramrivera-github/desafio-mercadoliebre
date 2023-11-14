@@ -238,6 +238,20 @@ footer i:hover{
     width: 20%;
     padding: 15px;
 }
+.register .mensaje-error{
+    display: none;    
+}
+:invalid + .mensaje-error{
+    color: red;
+    display: block;
+    font-size: 12px;
+    margin: 5px 0px 0px 10px;
+    
+}
+.register .mensaje-error:valid{
+    display: none;
+}
+
 /*Estilo de Login */
 .login{
     background-color: #ebebeb;
